@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B942272AB97F003F6348 /* LoginViewController.swift */; };
+		CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC13B943272AB97F003F6348 /* LoginViewController.xib */; };
+		CC13B947272ABA37003F6348 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B946272ABA37003F6348 /* AppColors.swift */; };
 		CCD09319272AA7C50003130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09318272AA7C50003130C /* AppDelegate.swift */; };
 		CCD0931B272AA7C50003130C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0931A272AA7C50003130C /* SceneDelegate.swift */; };
 		CCD0931D272AA7C50003130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0931C272AA7C50003130C /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC13B942272AB97F003F6348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC13B943272AB97F003F6348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CC13B946272ABA37003F6348 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		CCD09315272AA7C50003130C /* MVC-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD09318272AA7C50003130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD0931A272AA7C50003130C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 				CCD09326272AA7C70003130C /* LaunchScreen.storyboard */,
 				CCD09329272AA7C70003130C /* Info.plist */,
 				CCD09321272AA7C50003130C /* MVC_example.xcdatamodeld */,
+				CC13B942272AB97F003F6348 /* LoginViewController.swift */,
+				CC13B943272AB97F003F6348 /* LoginViewController.xib */,
+				CC13B946272ABA37003F6348 /* AppColors.swift */,
 			);
 			path = "MVC-example";
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */,
 				CCD09328272AA7C70003130C /* LaunchScreen.storyboard in Resources */,
 				CCD09325272AA7C70003130C /* Assets.xcassets in Resources */,
 				CCD09320272AA7C50003130C /* Main.storyboard in Resources */,
@@ -264,6 +274,8 @@
 				CCD0931D272AA7C50003130C /* ViewController.swift in Sources */,
 				CCD09323272AA7C50003130C /* MVC_example.xcdatamodeld in Sources */,
 				CCD09319272AA7C50003130C /* AppDelegate.swift in Sources */,
+				CC13B947272ABA37003F6348 /* AppColors.swift in Sources */,
+				CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */,
 				CCD0931B272AA7C50003130C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
