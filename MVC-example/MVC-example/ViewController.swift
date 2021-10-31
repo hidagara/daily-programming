@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
     
-    var loginTextField = UITextField()
+    @Published var loginTextField = UITextField()
     var loginLabel = UILabel()
     var passwordTextField = UITextField()
     var passwordLabel = UILabel()
@@ -46,6 +47,9 @@ class ViewController: UIViewController {
         loginTextField.translatesAutoresizingMaskIntoConstraints = false
         loginTextField.placeholder = "Your email"
         loginTextField.borderStyle = UITextField.BorderStyle.roundedRect
+        
+        
+        loginTextField.
         
         let verticalConstraint = NSLayoutConstraint(item: loginTextField, attribute: .top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: loginLabel, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 15)
         let trailingConstraint = NSLayoutConstraint(item: loginTextField, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 15)
