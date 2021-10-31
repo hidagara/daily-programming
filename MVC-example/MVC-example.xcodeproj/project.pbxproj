@@ -160,6 +160,7 @@
 		2E4AE566272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Medium@1x.png"; sourceTree = "<group>"; };
 		2E4AE567272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Large@1x.png"; sourceTree = "<group>"; };
 		2E4AE568272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Small@1x.png"; sourceTree = "<group>"; };
+		2E4AE595272F563600E92376 /* multithreading_notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = multithreading_notes.md; sourceTree = "<group>"; };
 		CC13B942272AB97F003F6348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC13B943272AB97F003F6348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CC13B946272ABA37003F6348 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -242,7 +243,8 @@
 				2E4AE537272F181800E92376 /* PDF */,
 				2E4AE53A272F181800E92376 /* PNG */,
 			);
-			path = "Sign in with Apple - Logo Only";
+			name = "Sign in with Apple - Logo Only";
+			path = "MVC-example/resources/Sign in with Apple - Logo Only";
 			sourceTree = SOURCE_ROOT;
 		};
 		2E4AE534272F181800E92376 /* SVG */ = {
@@ -307,7 +309,8 @@
 				2E4AE54C272F181800E92376 /* PDF */,
 				2E4AE553272F181800E92376 /* PNG */,
 			);
-			path = "Sign in with Apple - Left Aligned";
+			name = "Sign in with Apple - Left Aligned";
+			path = "MVC-example/resources/Sign in with Apple - Left Aligned";
 			sourceTree = SOURCE_ROOT;
 		};
 		2E4AE545272F181800E92376 /* SVG */ = {
@@ -385,6 +388,26 @@
 			path = 1x;
 			sourceTree = "<group>";
 		};
+		2E4AE591272F55F900E92376 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE544272F181800E92376 /* Sign in with Apple - Left Aligned */,
+				2E4AE533272F181800E92376 /* Sign in with Apple - Logo Only */,
+				2E4AE511272F120700E92376 /* fonts */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		2E4AE592272F560F00E92376 /* notes */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE510272F0FDC00E92376 /* UIKit_Notes.md */,
+				2E4AE512272F149B00E92376 /* how_to_notes.md */,
+				2E4AE595272F563600E92376 /* multithreading_notes.md */,
+			);
+			path = notes;
+			sourceTree = "<group>";
+		};
 		CCD0930C272AA7C50003130C = {
 			isa = PBXGroup;
 			children = (
@@ -408,9 +431,8 @@
 		CCD09317272AA7C50003130C /* MVC-example */ = {
 			isa = PBXGroup;
 			children = (
-				2E4AE544272F181800E92376 /* Sign in with Apple - Left Aligned */,
-				2E4AE533272F181800E92376 /* Sign in with Apple - Logo Only */,
-				2E4AE511272F120700E92376 /* fonts */,
+				2E4AE592272F560F00E92376 /* notes */,
+				2E4AE591272F55F900E92376 /* resources */,
 				2E4AE50D272F0E7A00E92376 /* CommonElements */,
 				CCD09318272AA7C50003130C /* AppDelegate.swift */,
 				CCD0931A272AA7C50003130C /* SceneDelegate.swift */,
@@ -425,8 +447,6 @@
 				CC13B946272ABA37003F6348 /* AppColors.swift */,
 				2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */,
 				2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */,
-				2E4AE510272F0FDC00E92376 /* UIKit_Notes.md */,
-				2E4AE512272F149B00E92376 /* how_to_notes.md */,
 			);
 			path = "MVC-example";
 			sourceTree = "<group>";
