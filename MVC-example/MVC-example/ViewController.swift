@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     var loginLabel = UILabel()
     var passwordTextField = UITextField()
     var passwordLabel = UILabel()
-    var loginButton = UIButton()
+    var loginButton = DefaultButton()
+    var appleButton = SignInAppleButton()
+    var onboardingButton = DefaultButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,8 @@ class ViewController: UIViewController {
         setupPasswordLabel()
         setupPasswordTextField()
         setupLoginButton()
+        setupSignInAppleButton()
+        setupOnboardingButton()
     }
     
     func setupLoginLabel() {
@@ -32,10 +36,10 @@ class ViewController: UIViewController {
         
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         loginLabel.text = "Login"
-        loginLabel.font = UIFont.systemFont(ofSize: 24)
+        loginLabel.font = UIFont.init(name: "Nunito-Bold", size: 24)
         loginLabel.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         let horizontalConstraint = NSLayoutConstraint(item: loginLabel, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 15)
-        let verticalConstraint = NSLayoutConstraint(item: loginLabel, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 0)
+        let verticalConstraint = NSLayoutConstraint(item: loginLabel, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view.safeAreaLayoutGuide, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1, constant: 0)
         let widthConstraint = NSLayoutConstraint(item: loginLabel, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
         NSLayoutConstraint.activate([horizontalConstraint,verticalConstraint, widthConstraint])
     }
@@ -49,8 +53,6 @@ class ViewController: UIViewController {
         loginTextField.borderStyle = UITextField.BorderStyle.roundedRect
         
         
-        loginTextField.
-        
         let verticalConstraint = NSLayoutConstraint(item: loginTextField, attribute: .top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: loginLabel, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 15)
         let trailingConstraint = NSLayoutConstraint(item: loginTextField, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 15)
         let leadingConstraint = NSLayoutConstraint(item: loginTextField, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1, constant: -15)
@@ -62,9 +64,10 @@ class ViewController: UIViewController {
     func setupPasswordLabel() {
         self.view.addSubview(passwordLabel)
         
+        passwordLabel.font = UIFont(name: "Nunito-Regular", size: 24)
+        
         passwordLabel.translatesAutoresizingMaskIntoConstraints = false
         passwordLabel.text = "Password"
-        passwordLabel.font = UIFont.systemFont(ofSize: 24)
         passwordLabel.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         let horizontalConstraint = NSLayoutConstraint(item: passwordLabel, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 15)
         let verticalConstraint = NSLayoutConstraint(item: passwordLabel, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: loginTextField, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 15)
@@ -91,24 +94,48 @@ class ViewController: UIViewController {
     func setupLoginButton() {
         self.view.addSubview(loginButton)
         
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        loginButton.backgroundColor = AppColors.claret
-        loginButton.layer.cornerRadius = 8
-        
-        loginButton.setTitle("Login", for: .normal)
-        
+         
         
         let verticalConstraint = NSLayoutConstraint(item: loginButton, attribute: .top, relatedBy: .equal, toItem: passwordTextField, attribute: .bottom, multiplier: 1, constant: 15)
         let heightConstraint = NSLayoutConstraint(item: loginButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 60)
-        let widthConstraint = NSLayoutConstraint(item: loginButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 110)
+        let widthConstraint = NSLayoutConstraint(item: loginButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 240)
         let leadingConstraint = NSLayoutConstraint(item: loginButton, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 15)
         let trailingConstraint = NSLayoutConstraint(item: loginButton, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: -15)
         
         let horizontalConstraint = NSLayoutConstraint(item: loginButton, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
         
         NSLayoutConstraint.activate([verticalConstraint, heightConstraint, widthConstraint, horizontalConstraint])
+    }
+    
+    func setupSignInAppleButton() {
+        self.view.addSubview(appleButton)
         
+        appleButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        let verticalConstraint = NSLayoutConstraint(item: appleButton, attribute: .top, relatedBy: .equal, toItem: loginButton, attribute: .bottom, multiplier: 1, constant: 15)
+        let heightConstraint = NSLayoutConstraint(item: appleButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 60)
+        let widthConstraint = NSLayoutConstraint(item: appleButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 240)
+        let leadingConstraint = NSLayoutConstraint(item: appleButton, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 15)
+        let trailingConstraint = NSLayoutConstraint(item: appleButton, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: -15)
+        
+        let horizontalConstraint = NSLayoutConstraint(item: appleButton, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
+        
+        NSLayoutConstraint.activate([verticalConstraint, heightConstraint, widthConstraint, horizontalConstraint])
+    }
+    
+    func setupOnboardingButton() {
+        self.view.addSubview(onboardingButton)
+        onboardingButton.setTitle("Onboarding", for: .normal)
+        
+        let verticalConstraint = NSLayoutConstraint(item: onboardingButton, attribute: .top, relatedBy: .equal, toItem: appleButton, attribute: .bottom, multiplier: 1, constant: 15)
+        let heightConstraint = NSLayoutConstraint(item: onboardingButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 60)
+        let widthConstraint = NSLayoutConstraint(item: onboardingButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 240)
+        let leadingConstraint = NSLayoutConstraint(item: onboardingButton, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 15)
+        let trailingConstraint = NSLayoutConstraint(item: onboardingButton, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: -15)
+        
+        let horizontalConstraint = NSLayoutConstraint(item: onboardingButton, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
+        
+        NSLayoutConstraint.activate([verticalConstraint, heightConstraint, widthConstraint, horizontalConstraint])
     }
 }
 

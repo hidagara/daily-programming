@@ -9,6 +9,63 @@
 /* Begin PBXBuildFile section */
 		2E4AE50B272EAF9E00E92376 /* MultihreadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */; };
 		2E4AE50C272EAF9E00E92376 /* MultihreadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */; };
+		2E4AE50F272F0E8F00E92376 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AE50E272F0E8F00E92376 /* DefaultButton.swift */; };
+		2E4AE521272F14DF00E92376 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE513272F14DE00E92376 /* Nunito-Italic.ttf */; };
+		2E4AE522272F14DF00E92376 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE514272F14DE00E92376 /* Nunito-LightItalic.ttf */; };
+		2E4AE523272F14DF00E92376 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE515272F14DE00E92376 /* Nunito-Regular.ttf */; };
+		2E4AE524272F14DF00E92376 /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE516272F14DE00E92376 /* Nunito-ExtraLightItalic.ttf */; };
+		2E4AE525272F14DF00E92376 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE517272F14DE00E92376 /* Nunito-BoldItalic.ttf */; };
+		2E4AE526272F14DF00E92376 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE518272F14DF00E92376 /* Nunito-SemiBold.ttf */; };
+		2E4AE527272F14DF00E92376 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE519272F14DF00E92376 /* Nunito-ExtraBold.ttf */; };
+		2E4AE528272F14DF00E92376 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE51A272F14DF00E92376 /* Nunito-ExtraLight.ttf */; };
+		2E4AE529272F14DF00E92376 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE51B272F14DF00E92376 /* Nunito-ExtraBoldItalic.ttf */; };
+		2E4AE52A272F14DF00E92376 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE51C272F14DF00E92376 /* Nunito-Bold.ttf */; };
+		2E4AE52B272F14DF00E92376 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE51D272F14DF00E92376 /* Nunito-Light.ttf */; };
+		2E4AE52C272F14DF00E92376 /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE51E272F14DF00E92376 /* Nunito-SemiBoldItalic.ttf */; };
+		2E4AE52D272F14DF00E92376 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE51F272F14DF00E92376 /* Nunito-Black.ttf */; };
+		2E4AE52E272F14DF00E92376 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE520272F14DF00E92376 /* Nunito-BlackItalic.ttf */; };
+		2E4AE530272F165A00E92376 /* SignInAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AE52F272F165A00E92376 /* SignInAppleButton.swift */; };
+		2E4AE532272F166B00E92376 /* SignInGoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AE531272F166B00E92376 /* SignInGoogleButton.swift */; };
+		2E4AE569272F181900E92376 /* Logo - SIWA - Logo-only - White.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE535272F181800E92376 /* Logo - SIWA - Logo-only - White.svg */; };
+		2E4AE56A272F181900E92376 /* Logo - SIWA - Logo-only - Black.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE536272F181800E92376 /* Logo - SIWA - Logo-only - Black.svg */; };
+		2E4AE56B272F181900E92376 /* Logo - SIWA - Logo-only - White.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE538272F181800E92376 /* Logo - SIWA - Logo-only - White.pdf */; };
+		2E4AE56C272F181900E92376 /* Logo - SIWA - Logo-only - Black.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE539272F181800E92376 /* Logo - SIWA - Logo-only - Black.pdf */; };
+		2E4AE56D272F181900E92376 /* Logo - SIWA - Logo-only - White@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE53C272F181800E92376 /* Logo - SIWA - Logo-only - White@3x.png */; };
+		2E4AE56E272F181900E92376 /* Logo - SIWA - Logo-only - Black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE53D272F181800E92376 /* Logo - SIWA - Logo-only - Black@3x.png */; };
+		2E4AE56F272F181900E92376 /* Logo - SIWA - Logo-only - White@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE53F272F181800E92376 /* Logo - SIWA - Logo-only - White@2x.png */; };
+		2E4AE570272F181900E92376 /* Logo - SIWA - Logo-only - Black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE540272F181800E92376 /* Logo - SIWA - Logo-only - Black@2x.png */; };
+		2E4AE571272F181900E92376 /* Logo - SIWA - Logo-only - Black@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE542272F181800E92376 /* Logo - SIWA - Logo-only - Black@1x.png */; };
+		2E4AE572272F181900E92376 /* Logo - SIWA - Logo-only - White@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE543272F181800E92376 /* Logo - SIWA - Logo-only - White@1x.png */; };
+		2E4AE573272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE546272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small.svg */; };
+		2E4AE574272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE547272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium.svg */; };
+		2E4AE575272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE548272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large.svg */; };
+		2E4AE576272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE549272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small.svg */; };
+		2E4AE577272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE54A272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large.svg */; };
+		2E4AE578272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE54B272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium.svg */; };
+		2E4AE579272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE54D272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large.pdf */; };
+		2E4AE57A272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE54E272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small.pdf */; };
+		2E4AE57B272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE54F272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium.pdf */; };
+		2E4AE57C272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE550272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large.pdf */; };
+		2E4AE57D272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE551272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium.pdf */; };
+		2E4AE57E272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE552272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small.pdf */; };
+		2E4AE57F272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE555272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@3x.png */; };
+		2E4AE580272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE556272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@3x.png */; };
+		2E4AE581272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE557272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@3x.png */; };
+		2E4AE582272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE558272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@3x.png */; };
+		2E4AE583272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE559272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@3x.png */; };
+		2E4AE584272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE55A272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@3x.png */; };
+		2E4AE585272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE55C272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@2x.png */; };
+		2E4AE586272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE55D272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@2x.png */; };
+		2E4AE587272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE55E272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@2x.png */; };
+		2E4AE588272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE55F272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@2x.png */; };
+		2E4AE589272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE560272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@2x.png */; };
+		2E4AE58A272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE561272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@2x.png */; };
+		2E4AE58B272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE563272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@1x.png */; };
+		2E4AE58C272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE564272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@1x.png */; };
+		2E4AE58D272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE565272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@1x.png */; };
+		2E4AE58E272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE566272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@1x.png */; };
+		2E4AE58F272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE567272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png */; };
+		2E4AE590272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE568272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png */; };
 		CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B942272AB97F003F6348 /* LoginViewController.swift */; };
 		CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC13B943272AB97F003F6348 /* LoginViewController.xib */; };
 		CC13B947272ABA37003F6348 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B946272ABA37003F6348 /* AppColors.swift */; };
@@ -44,6 +101,65 @@
 /* Begin PBXFileReference section */
 		2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultihreadingViewController.swift; sourceTree = "<group>"; };
 		2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultihreadingViewController.xib; sourceTree = "<group>"; };
+		2E4AE50E272F0E8F00E92376 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		2E4AE510272F0FDC00E92376 /* UIKit_Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UIKit_Notes.md; sourceTree = "<group>"; };
+		2E4AE512272F149B00E92376 /* how_to_notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = how_to_notes.md; sourceTree = "<group>"; };
+		2E4AE513272F14DE00E92376 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		2E4AE514272F14DE00E92376 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		2E4AE515272F14DE00E92376 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		2E4AE516272F14DE00E92376 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		2E4AE517272F14DE00E92376 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2E4AE518272F14DF00E92376 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		2E4AE519272F14DF00E92376 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2E4AE51A272F14DF00E92376 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		2E4AE51B272F14DF00E92376 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		2E4AE51C272F14DF00E92376 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		2E4AE51D272F14DF00E92376 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		2E4AE51E272F14DF00E92376 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		2E4AE51F272F14DF00E92376 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		2E4AE520272F14DF00E92376 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		2E4AE52F272F165A00E92376 /* SignInAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleButton.swift; sourceTree = "<group>"; };
+		2E4AE531272F166B00E92376 /* SignInGoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleButton.swift; sourceTree = "<group>"; };
+		2E4AE535272F181800E92376 /* Logo - SIWA - Logo-only - White.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Logo - SIWA - Logo-only - White.svg"; sourceTree = "<group>"; };
+		2E4AE536272F181800E92376 /* Logo - SIWA - Logo-only - Black.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Logo - SIWA - Logo-only - Black.svg"; sourceTree = "<group>"; };
+		2E4AE538272F181800E92376 /* Logo - SIWA - Logo-only - White.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Logo - SIWA - Logo-only - White.pdf"; sourceTree = "<group>"; };
+		2E4AE539272F181800E92376 /* Logo - SIWA - Logo-only - Black.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Logo - SIWA - Logo-only - Black.pdf"; sourceTree = "<group>"; };
+		2E4AE53C272F181800E92376 /* Logo - SIWA - Logo-only - White@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Logo-only - White@3x.png"; sourceTree = "<group>"; };
+		2E4AE53D272F181800E92376 /* Logo - SIWA - Logo-only - Black@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Logo-only - Black@3x.png"; sourceTree = "<group>"; };
+		2E4AE53F272F181800E92376 /* Logo - SIWA - Logo-only - White@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Logo-only - White@2x.png"; sourceTree = "<group>"; };
+		2E4AE540272F181800E92376 /* Logo - SIWA - Logo-only - Black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Logo-only - Black@2x.png"; sourceTree = "<group>"; };
+		2E4AE542272F181800E92376 /* Logo - SIWA - Logo-only - Black@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Logo-only - Black@1x.png"; sourceTree = "<group>"; };
+		2E4AE543272F181800E92376 /* Logo - SIWA - Logo-only - White@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Logo-only - White@1x.png"; sourceTree = "<group>"; };
+		2E4AE546272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Logo - SIWA - Left-aligned - White - Small.svg"; sourceTree = "<group>"; };
+		2E4AE547272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Logo - SIWA - Left-aligned - Black - Medium.svg"; sourceTree = "<group>"; };
+		2E4AE548272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Logo - SIWA - Left-aligned - White - Large.svg"; sourceTree = "<group>"; };
+		2E4AE549272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Logo - SIWA - Left-aligned - Black - Small.svg"; sourceTree = "<group>"; };
+		2E4AE54A272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Logo - SIWA - Left-aligned - Black - Large.svg"; sourceTree = "<group>"; };
+		2E4AE54B272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Logo - SIWA - Left-aligned - White - Medium.svg"; sourceTree = "<group>"; };
+		2E4AE54D272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Logo - SIWA - Left-aligned - White - Large.pdf"; sourceTree = "<group>"; };
+		2E4AE54E272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Logo - SIWA - Left-aligned - White - Small.pdf"; sourceTree = "<group>"; };
+		2E4AE54F272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Logo - SIWA - Left-aligned - Black - Medium.pdf"; sourceTree = "<group>"; };
+		2E4AE550272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Logo - SIWA - Left-aligned - Black - Large.pdf"; sourceTree = "<group>"; };
+		2E4AE551272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Logo - SIWA - Left-aligned - White - Medium.pdf"; sourceTree = "<group>"; };
+		2E4AE552272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Logo - SIWA - Left-aligned - Black - Small.pdf"; sourceTree = "<group>"; };
+		2E4AE555272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Large@3x.png"; sourceTree = "<group>"; };
+		2E4AE556272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Small@3x.png"; sourceTree = "<group>"; };
+		2E4AE557272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Medium@3x.png"; sourceTree = "<group>"; };
+		2E4AE558272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Medium@3x.png"; sourceTree = "<group>"; };
+		2E4AE559272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Large@3x.png"; sourceTree = "<group>"; };
+		2E4AE55A272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Small@3x.png"; sourceTree = "<group>"; };
+		2E4AE55C272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Small@2x.png"; sourceTree = "<group>"; };
+		2E4AE55D272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Large@2x.png"; sourceTree = "<group>"; };
+		2E4AE55E272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Medium@2x.png"; sourceTree = "<group>"; };
+		2E4AE55F272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Medium@2x.png"; sourceTree = "<group>"; };
+		2E4AE560272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Small@2x.png"; sourceTree = "<group>"; };
+		2E4AE561272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Large@2x.png"; sourceTree = "<group>"; };
+		2E4AE563272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Large@1x.png"; sourceTree = "<group>"; };
+		2E4AE564272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Small@1x.png"; sourceTree = "<group>"; };
+		2E4AE565272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Medium@1x.png"; sourceTree = "<group>"; };
+		2E4AE566272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - White - Medium@1x.png"; sourceTree = "<group>"; };
+		2E4AE567272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Large@1x.png"; sourceTree = "<group>"; };
+		2E4AE568272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Small@1x.png"; sourceTree = "<group>"; };
 		CC13B942272AB97F003F6348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC13B943272AB97F003F6348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CC13B946272ABA37003F6348 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -88,6 +204,187 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E4AE50D272F0E7A00E92376 /* CommonElements */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE50E272F0E8F00E92376 /* DefaultButton.swift */,
+				2E4AE52F272F165A00E92376 /* SignInAppleButton.swift */,
+				2E4AE531272F166B00E92376 /* SignInGoogleButton.swift */,
+			);
+			path = CommonElements;
+			sourceTree = "<group>";
+		};
+		2E4AE511272F120700E92376 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE51F272F14DF00E92376 /* Nunito-Black.ttf */,
+				2E4AE520272F14DF00E92376 /* Nunito-BlackItalic.ttf */,
+				2E4AE51C272F14DF00E92376 /* Nunito-Bold.ttf */,
+				2E4AE517272F14DE00E92376 /* Nunito-BoldItalic.ttf */,
+				2E4AE519272F14DF00E92376 /* Nunito-ExtraBold.ttf */,
+				2E4AE51B272F14DF00E92376 /* Nunito-ExtraBoldItalic.ttf */,
+				2E4AE51A272F14DF00E92376 /* Nunito-ExtraLight.ttf */,
+				2E4AE516272F14DE00E92376 /* Nunito-ExtraLightItalic.ttf */,
+				2E4AE513272F14DE00E92376 /* Nunito-Italic.ttf */,
+				2E4AE51D272F14DF00E92376 /* Nunito-Light.ttf */,
+				2E4AE514272F14DE00E92376 /* Nunito-LightItalic.ttf */,
+				2E4AE515272F14DE00E92376 /* Nunito-Regular.ttf */,
+				2E4AE518272F14DF00E92376 /* Nunito-SemiBold.ttf */,
+				2E4AE51E272F14DF00E92376 /* Nunito-SemiBoldItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		2E4AE533272F181800E92376 /* Sign in with Apple - Logo Only */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE534272F181800E92376 /* SVG */,
+				2E4AE537272F181800E92376 /* PDF */,
+				2E4AE53A272F181800E92376 /* PNG */,
+			);
+			path = "Sign in with Apple - Logo Only";
+			sourceTree = SOURCE_ROOT;
+		};
+		2E4AE534272F181800E92376 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE535272F181800E92376 /* Logo - SIWA - Logo-only - White.svg */,
+				2E4AE536272F181800E92376 /* Logo - SIWA - Logo-only - Black.svg */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		2E4AE537272F181800E92376 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE538272F181800E92376 /* Logo - SIWA - Logo-only - White.pdf */,
+				2E4AE539272F181800E92376 /* Logo - SIWA - Logo-only - Black.pdf */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		2E4AE53A272F181800E92376 /* PNG */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE53B272F181800E92376 /* 3x */,
+				2E4AE53E272F181800E92376 /* 2x */,
+				2E4AE541272F181800E92376 /* 1x */,
+			);
+			path = PNG;
+			sourceTree = "<group>";
+		};
+		2E4AE53B272F181800E92376 /* 3x */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE53C272F181800E92376 /* Logo - SIWA - Logo-only - White@3x.png */,
+				2E4AE53D272F181800E92376 /* Logo - SIWA - Logo-only - Black@3x.png */,
+			);
+			path = 3x;
+			sourceTree = "<group>";
+		};
+		2E4AE53E272F181800E92376 /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE53F272F181800E92376 /* Logo - SIWA - Logo-only - White@2x.png */,
+				2E4AE540272F181800E92376 /* Logo - SIWA - Logo-only - Black@2x.png */,
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		2E4AE541272F181800E92376 /* 1x */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE542272F181800E92376 /* Logo - SIWA - Logo-only - Black@1x.png */,
+				2E4AE543272F181800E92376 /* Logo - SIWA - Logo-only - White@1x.png */,
+			);
+			path = 1x;
+			sourceTree = "<group>";
+		};
+		2E4AE544272F181800E92376 /* Sign in with Apple - Left Aligned */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE545272F181800E92376 /* SVG */,
+				2E4AE54C272F181800E92376 /* PDF */,
+				2E4AE553272F181800E92376 /* PNG */,
+			);
+			path = "Sign in with Apple - Left Aligned";
+			sourceTree = SOURCE_ROOT;
+		};
+		2E4AE545272F181800E92376 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE546272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small.svg */,
+				2E4AE547272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium.svg */,
+				2E4AE548272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large.svg */,
+				2E4AE549272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small.svg */,
+				2E4AE54A272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large.svg */,
+				2E4AE54B272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium.svg */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		2E4AE54C272F181800E92376 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE54D272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large.pdf */,
+				2E4AE54E272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small.pdf */,
+				2E4AE54F272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium.pdf */,
+				2E4AE550272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large.pdf */,
+				2E4AE551272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium.pdf */,
+				2E4AE552272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small.pdf */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		2E4AE553272F181800E92376 /* PNG */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE554272F181800E92376 /* 3x */,
+				2E4AE55B272F181800E92376 /* 2x */,
+				2E4AE562272F181800E92376 /* 1x */,
+			);
+			path = PNG;
+			sourceTree = "<group>";
+		};
+		2E4AE554272F181800E92376 /* 3x */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE555272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@3x.png */,
+				2E4AE556272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@3x.png */,
+				2E4AE557272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@3x.png */,
+				2E4AE558272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@3x.png */,
+				2E4AE559272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@3x.png */,
+				2E4AE55A272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@3x.png */,
+			);
+			path = 3x;
+			sourceTree = "<group>";
+		};
+		2E4AE55B272F181800E92376 /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE55C272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@2x.png */,
+				2E4AE55D272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@2x.png */,
+				2E4AE55E272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@2x.png */,
+				2E4AE55F272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@2x.png */,
+				2E4AE560272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@2x.png */,
+				2E4AE561272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@2x.png */,
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		2E4AE562272F181800E92376 /* 1x */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE563272F181800E92376 /* Logo - SIWA - Left-aligned - White - Large@1x.png */,
+				2E4AE564272F181800E92376 /* Logo - SIWA - Left-aligned - White - Small@1x.png */,
+				2E4AE565272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Medium@1x.png */,
+				2E4AE566272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@1x.png */,
+				2E4AE567272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png */,
+				2E4AE568272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png */,
+			);
+			path = 1x;
+			sourceTree = "<group>";
+		};
 		CCD0930C272AA7C50003130C = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +408,10 @@
 		CCD09317272AA7C50003130C /* MVC-example */ = {
 			isa = PBXGroup;
 			children = (
+				2E4AE544272F181800E92376 /* Sign in with Apple - Left Aligned */,
+				2E4AE533272F181800E92376 /* Sign in with Apple - Logo Only */,
+				2E4AE511272F120700E92376 /* fonts */,
+				2E4AE50D272F0E7A00E92376 /* CommonElements */,
 				CCD09318272AA7C50003130C /* AppDelegate.swift */,
 				CCD0931A272AA7C50003130C /* SceneDelegate.swift */,
 				CCD0931C272AA7C50003130C /* ViewController.swift */,
@@ -124,6 +425,8 @@
 				CC13B946272ABA37003F6348 /* AppColors.swift */,
 				2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */,
 				2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */,
+				2E4AE510272F0FDC00E92376 /* UIKit_Notes.md */,
+				2E4AE512272F149B00E92376 /* how_to_notes.md */,
 			);
 			path = "MVC-example";
 			sourceTree = "<group>";
@@ -249,11 +552,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4AE574272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium.svg in Resources */,
+				2E4AE578272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium.svg in Resources */,
+				2E4AE584272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small@3x.png in Resources */,
+				2E4AE586272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large@2x.png in Resources */,
+				2E4AE52C272F14DF00E92376 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				2E4AE581272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium@3x.png in Resources */,
+				2E4AE56A272F181900E92376 /* Logo - SIWA - Logo-only - Black.svg in Resources */,
 				CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */,
+				2E4AE52A272F14DF00E92376 /* Nunito-Bold.ttf in Resources */,
+				2E4AE56C272F181900E92376 /* Logo - SIWA - Logo-only - Black.pdf in Resources */,
+				2E4AE57A272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small.pdf in Resources */,
+				2E4AE579272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large.pdf in Resources */,
+				2E4AE58B272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large@1x.png in Resources */,
+				2E4AE572272F181900E92376 /* Logo - SIWA - Logo-only - White@1x.png in Resources */,
+				2E4AE582272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium@3x.png in Resources */,
+				2E4AE570272F181900E92376 /* Logo - SIWA - Logo-only - Black@2x.png in Resources */,
+				2E4AE524272F14DF00E92376 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				2E4AE58E272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium@1x.png in Resources */,
+				2E4AE571272F181900E92376 /* Logo - SIWA - Logo-only - Black@1x.png in Resources */,
+				2E4AE521272F14DF00E92376 /* Nunito-Italic.ttf in Resources */,
+				2E4AE57B272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium.pdf in Resources */,
+				2E4AE527272F14DF00E92376 /* Nunito-ExtraBold.ttf in Resources */,
+				2E4AE57F272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large@3x.png in Resources */,
+				2E4AE523272F14DF00E92376 /* Nunito-Regular.ttf in Resources */,
+				2E4AE57E272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small.pdf in Resources */,
+				2E4AE56D272F181900E92376 /* Logo - SIWA - Logo-only - White@3x.png in Resources */,
+				2E4AE58D272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium@1x.png in Resources */,
+				2E4AE587272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium@2x.png in Resources */,
+				2E4AE576272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small.svg in Resources */,
+				2E4AE529272F14DF00E92376 /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				2E4AE585272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small@2x.png in Resources */,
+				2E4AE58C272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small@1x.png in Resources */,
+				2E4AE52E272F14DF00E92376 /* Nunito-BlackItalic.ttf in Resources */,
+				2E4AE577272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large.svg in Resources */,
+				2E4AE583272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large@3x.png in Resources */,
+				2E4AE588272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Medium@2x.png in Resources */,
+				2E4AE590272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png in Resources */,
+				2E4AE58F272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png in Resources */,
+				2E4AE56E272F181900E92376 /* Logo - SIWA - Logo-only - Black@3x.png in Resources */,
+				2E4AE58A272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large@2x.png in Resources */,
 				CCD09328272AA7C70003130C /* LaunchScreen.storyboard in Resources */,
+				2E4AE56F272F181900E92376 /* Logo - SIWA - Logo-only - White@2x.png in Resources */,
+				2E4AE569272F181900E92376 /* Logo - SIWA - Logo-only - White.svg in Resources */,
+				2E4AE526272F14DF00E92376 /* Nunito-SemiBold.ttf in Resources */,
+				2E4AE589272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small@2x.png in Resources */,
 				2E4AE50C272EAF9E00E92376 /* MultihreadingViewController.xib in Resources */,
+				2E4AE525272F14DF00E92376 /* Nunito-BoldItalic.ttf in Resources */,
+				2E4AE522272F14DF00E92376 /* Nunito-LightItalic.ttf in Resources */,
+				2E4AE57D272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium.pdf in Resources */,
 				CCD09325272AA7C70003130C /* Assets.xcassets in Resources */,
 				CCD09320272AA7C50003130C /* Main.storyboard in Resources */,
+				2E4AE56B272F181900E92376 /* Logo - SIWA - Logo-only - White.pdf in Resources */,
+				2E4AE57C272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large.pdf in Resources */,
+				2E4AE52B272F14DF00E92376 /* Nunito-Light.ttf in Resources */,
+				2E4AE573272F181900E92376 /* Logo - SIWA - Left-aligned - White - Small.svg in Resources */,
+				2E4AE575272F181900E92376 /* Logo - SIWA - Left-aligned - White - Large.svg in Resources */,
+				2E4AE580272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small@3x.png in Resources */,
+				2E4AE528272F14DF00E92376 /* Nunito-ExtraLight.ttf in Resources */,
+				2E4AE52D272F14DF00E92376 /* Nunito-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +641,10 @@
 				CC13B947272ABA37003F6348 /* AppColors.swift in Sources */,
 				2E4AE50B272EAF9E00E92376 /* MultihreadingViewController.swift in Sources */,
 				CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */,
+				2E4AE532272F166B00E92376 /* SignInGoogleButton.swift in Sources */,
+				2E4AE530272F165A00E92376 /* SignInAppleButton.swift in Sources */,
 				CCD0931B272AA7C50003130C /* SceneDelegate.swift in Sources */,
+				2E4AE50F272F0E8F00E92376 /* DefaultButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
