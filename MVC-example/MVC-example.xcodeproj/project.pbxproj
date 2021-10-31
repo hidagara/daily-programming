@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E4AE50B272EAF9E00E92376 /* MultihreadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */; };
+		2E4AE50C272EAF9E00E92376 /* MultihreadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */; };
 		CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B942272AB97F003F6348 /* LoginViewController.swift */; };
 		CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC13B943272AB97F003F6348 /* LoginViewController.xib */; };
 		CC13B947272ABA37003F6348 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B946272ABA37003F6348 /* AppColors.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultihreadingViewController.swift; sourceTree = "<group>"; };
+		2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultihreadingViewController.xib; sourceTree = "<group>"; };
 		CC13B942272AB97F003F6348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC13B943272AB97F003F6348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CC13B946272ABA37003F6348 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				CC13B942272AB97F003F6348 /* LoginViewController.swift */,
 				CC13B943272AB97F003F6348 /* LoginViewController.xib */,
 				CC13B946272ABA37003F6348 /* AppColors.swift */,
+				2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */,
+				2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */,
 			);
 			path = "MVC-example";
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			files = (
 				CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */,
 				CCD09328272AA7C70003130C /* LaunchScreen.storyboard in Resources */,
+				2E4AE50C272EAF9E00E92376 /* MultihreadingViewController.xib in Resources */,
 				CCD09325272AA7C70003130C /* Assets.xcassets in Resources */,
 				CCD09320272AA7C50003130C /* Main.storyboard in Resources */,
 			);
@@ -275,6 +282,7 @@
 				CCD09323272AA7C50003130C /* MVC_example.xcdatamodeld in Sources */,
 				CCD09319272AA7C50003130C /* AppDelegate.swift in Sources */,
 				CC13B947272ABA37003F6348 /* AppColors.swift in Sources */,
+				2E4AE50B272EAF9E00E92376 /* MultihreadingViewController.swift in Sources */,
 				CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */,
 				CCD0931B272AA7C50003130C /* SceneDelegate.swift in Sources */,
 			);
