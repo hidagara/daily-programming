@@ -109,8 +109,10 @@ class ViewController: UIViewController {
     
     func setupSignInAppleButton() {
         self.view.addSubview(appleButton)
-        
         appleButton.translatesAutoresizingMaskIntoConstraints = false
+        appleButton.tapped = {
+            self.navigationController?.pushViewController(MultihreadingViewController(), animated: true)
+        }
         
         let verticalConstraint = NSLayoutConstraint(item: appleButton, attribute: .top, relatedBy: .equal, toItem: loginButton, attribute: .bottom, multiplier: 1, constant: 15)
         let heightConstraint = NSLayoutConstraint(item: appleButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 60)

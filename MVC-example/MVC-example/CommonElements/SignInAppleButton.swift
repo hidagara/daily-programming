@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 class SignInAppleButton: UIButton {
+    var tapped: (() -> Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,6 +19,12 @@ class SignInAppleButton: UIButton {
         self.setTitleColor(.black, for: .normal)
         self.setTitleShadowColor(AppColors.prussianBlue, for: .normal)
         self.backgroundColor = .white
+        self.addTarget(self, action: #selector(onTap), for: .touchUpInside)
+    }
+    
+    
+    @objc func onTap() {
+        tapped?()
     }
     
     required init?(coder: NSCoder) {
