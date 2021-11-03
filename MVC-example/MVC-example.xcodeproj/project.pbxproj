@@ -66,6 +66,7 @@
 		2E4AE58E272F181900E92376 /* Logo - SIWA - Left-aligned - White - Medium@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE566272F181800E92376 /* Logo - SIWA - Left-aligned - White - Medium@1x.png */; };
 		2E4AE58F272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE567272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png */; };
 		2E4AE590272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE568272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png */; };
+		2E4AE59A2730734B00E92376 /* MaterialCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AE5992730734A00E92376 /* MaterialCollectionView.swift */; };
 		CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B942272AB97F003F6348 /* LoginViewController.swift */; };
 		CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC13B943272AB97F003F6348 /* LoginViewController.xib */; };
 		CC13B947272ABA37003F6348 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B946272ABA37003F6348 /* AppColors.swift */; };
@@ -161,6 +162,7 @@
 		2E4AE567272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Large@1x.png"; sourceTree = "<group>"; };
 		2E4AE568272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Small@1x.png"; sourceTree = "<group>"; };
 		2E4AE595272F563600E92376 /* multithreading_notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = multithreading_notes.md; sourceTree = "<group>"; };
+		2E4AE5992730734A00E92376 /* MaterialCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCollectionView.swift; sourceTree = "<group>"; };
 		CC13B942272AB97F003F6348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC13B943272AB97F003F6348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CC13B946272ABA37003F6348 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				2E4AE50E272F0E8F00E92376 /* DefaultButton.swift */,
 				2E4AE52F272F165A00E92376 /* SignInAppleButton.swift */,
 				2E4AE531272F166B00E92376 /* SignInGoogleButton.swift */,
+				2E4AE5992730734A00E92376 /* MaterialCollectionView.swift */,
 			);
 			path = CommonElements;
 			sourceTree = "<group>";
@@ -408,6 +411,74 @@
 			path = notes;
 			sourceTree = "<group>";
 		};
+		2E4AE59627306BB200E92376 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE59E2730A0E000E92376 /* Multithreading */,
+				2E4AE59D2730A0DC00E92376 /* UI */,
+				2E4AE59C2730A0D000E92376 /* Push */,
+				2E4AE59B2730A0CB00E92376 /* Network */,
+				2E4AE59827306BC600E92376 /* Shop */,
+				2E4AE59727306BB900E92376 /* Datastore */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2E4AE59727306BB900E92376 /* Datastore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datastore;
+			sourceTree = "<group>";
+		};
+		2E4AE59827306BC600E92376 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		2E4AE59B2730A0CB00E92376 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E4AE59C2730A0D000E92376 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
+		2E4AE59D2730A0DC00E92376 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE50D272F0E7A00E92376 /* CommonElements */,
+				CC13B942272AB97F003F6348 /* LoginViewController.swift */,
+				CC13B943272AB97F003F6348 /* LoginViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2E4AE59E2730A0E000E92376 /* Multithreading */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */,
+				2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */,
+			);
+			path = Multithreading;
+			sourceTree = "<group>";
+		};
+		2E4AE59F2730A10400E92376 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CC13B946272ABA37003F6348 /* AppColors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		CCD0930C272AA7C50003130C = {
 			isa = PBXGroup;
 			children = (
@@ -431,9 +502,10 @@
 		CCD09317272AA7C50003130C /* MVC-example */ = {
 			isa = PBXGroup;
 			children = (
+				2E4AE59F2730A10400E92376 /* Constants */,
+				2E4AE59627306BB200E92376 /* Modules */,
 				2E4AE592272F560F00E92376 /* notes */,
 				2E4AE591272F55F900E92376 /* resources */,
-				2E4AE50D272F0E7A00E92376 /* CommonElements */,
 				CCD09318272AA7C50003130C /* AppDelegate.swift */,
 				CCD0931A272AA7C50003130C /* SceneDelegate.swift */,
 				CCD0931C272AA7C50003130C /* ViewController.swift */,
@@ -442,11 +514,6 @@
 				CCD09326272AA7C70003130C /* LaunchScreen.storyboard */,
 				CCD09329272AA7C70003130C /* Info.plist */,
 				CCD09321272AA7C50003130C /* MVC_example.xcdatamodeld */,
-				CC13B942272AB97F003F6348 /* LoginViewController.swift */,
-				CC13B943272AB97F003F6348 /* LoginViewController.xib */,
-				CC13B946272ABA37003F6348 /* AppColors.swift */,
-				2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */,
-				2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */,
 			);
 			path = "MVC-example";
 			sourceTree = "<group>";
@@ -656,6 +723,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCD0931D272AA7C50003130C /* ViewController.swift in Sources */,
+				2E4AE59A2730734B00E92376 /* MaterialCollectionView.swift in Sources */,
 				CCD09323272AA7C50003130C /* MVC_example.xcdatamodeld in Sources */,
 				CCD09319272AA7C50003130C /* AppDelegate.swift in Sources */,
 				CC13B947272ABA37003F6348 /* AppColors.swift in Sources */,
