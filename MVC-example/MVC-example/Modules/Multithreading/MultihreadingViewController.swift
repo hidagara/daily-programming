@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import os.signpost
 
 class MultihreadingViewController: UIViewController {
-    
     var patternsLabel = UILabel()
     var GCDLabel = UILabel()
     var asyncAwaitLabel = UILabel()
+    var operationLabel = UILabel()
 
-
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,8 @@ class MultihreadingViewController: UIViewController {
         setupPatternsLabel()
         setupGCDLabel()
         setupAsyncAwaitLabel()
+        setupOperationLabel()
+        
     }
     
     
@@ -35,7 +39,7 @@ class MultihreadingViewController: UIViewController {
 
 
         let horizontalConstraint = NSLayoutConstraint(item: patternsLabel, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 15)
-        let verticalConstraint = NSLayoutConstraint(item: patternsLabel, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
+        let verticalConstraint = NSLayoutConstraint(item: patternsLabel, attribute: .top, relatedBy: .equal, toItem: self.view.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: 10)
 
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
     }
@@ -68,6 +72,20 @@ class MultihreadingViewController: UIViewController {
 
         let horizontalConstraint = NSLayoutConstraint(item: asyncAwaitLabel, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 15)
         let verticalConstraint = NSLayoutConstraint(item: asyncAwaitLabel, attribute: .top, relatedBy: .equal, toItem: self.GCDLabel, attribute: .bottom, multiplier: 1, constant: 10)
+
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
+    }
+    
+    func setupOperationLabel() {
+        self.view.addSubview(operationLabel)
+        
+        operationLabel.translatesAutoresizingMaskIntoConstraints = false
+        operationLabel.font = UIFont(name: "Nunito-Regular", size: 24)
+        
+        operationLabel.text = "Operations API"
+        
+        let horizontalConstraint = NSLayoutConstraint(item: operationLabel, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 15)
+        let verticalConstraint = NSLayoutConstraint(item: operationLabel, attribute: .top, relatedBy: .equal, toItem: self.asyncAwaitLabel, attribute: .bottom, multiplier: 1, constant: 10)
 
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
     }

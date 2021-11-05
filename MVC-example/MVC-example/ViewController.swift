@@ -8,8 +8,15 @@
 import UIKit
 import Combine
 
+
+struct MaterialCollectionItem {
+    let name: String
+    
+}
 class ViewController: UIViewController {
-    var data = [UIColor.red, UIColor.green, UIColor.blue, UIColor.green, UIColor.purple, UIColor.orange, UIColor.blue, UIColor.green, UIColor.blue, UIColor.green, UIColor.red, UIColor.green, UIColor.blue, UIColor.green, UIColor.purple, UIColor.orange, UIColor.blue, UIColor.green, UIColor.blue, UIColor.green, UIColor.red, UIColor.green, UIColor.blue, UIColor.green, UIColor.purple, UIColor.orange, UIColor.blue, UIColor.green, UIColor.blue, UIColor.green, UIColor.red, UIColor.green, UIColor.blue, UIColor.green, UIColor.purple, UIColor.orange, UIColor.blue, UIColor.green, UIColor.blue, UIColor.green]
+    var data: [MaterialCollectionItem] = [
+        MaterialCollectionItem(name: "Multithreaidng")
+    ]
     
     @Published var loginTextField = UITextField()
     var loginLabel = UILabel()
@@ -61,7 +68,7 @@ class ViewController: UIViewController {
                 // set the delegate
                 self.materialCollection.delegate = self
                 // register the standard cell
-                self.materialCollection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+                self.materialCollection.register(MaterialsCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
                 // bounce at the bottom of the collection view
                 self.materialCollection.alwaysBounceVertical = true
                 // set the background to be white
@@ -206,9 +213,9 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // dequeue the standard cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MaterialsCollectionViewCell
         let data = self.data[indexPath.item]
-        cell.backgroundColor = data
+        cell.configureCell(text: data.name)
         return cell
     }
 }

@@ -70,6 +70,13 @@
 		CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B942272AB97F003F6348 /* LoginViewController.swift */; };
 		CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC13B943272AB97F003F6348 /* LoginViewController.xib */; };
 		CC13B947272ABA37003F6348 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B946272ABA37003F6348 /* AppColors.swift */; };
+		CC8835312734579400950DE5 /* SerialConcurrentExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8835302734579400950DE5 /* SerialConcurrentExample.swift */; };
+		CC88353327345C1800950DE5 /* DispatchGroupExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88353227345C1800950DE5 /* DispatchGroupExample.swift */; };
+		CC88353527345C2B00950DE5 /* OperationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88353427345C2B00950DE5 /* OperationExample.swift */; };
+		CC88353727345D6800950DE5 /* MaterialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88353627345D6800950DE5 /* MaterialsCollectionViewCell.swift */; };
+		CC8835392734614700950DE5 /* UIViewLifeCycleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8835382734614700950DE5 /* UIViewLifeCycleExample.swift */; };
+		CC88353B2734615A00950DE5 /* UIViewControllerLifecycleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88353A2734615A00950DE5 /* UIViewControllerLifecycleExample.swift */; };
+		CC88353D2734617A00950DE5 /* LayersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88353C2734617A00950DE5 /* LayersExample.swift */; };
 		CCD09319272AA7C50003130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09318272AA7C50003130C /* AppDelegate.swift */; };
 		CCD0931B272AA7C50003130C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0931A272AA7C50003130C /* SceneDelegate.swift */; };
 		CCD0931D272AA7C50003130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0931C272AA7C50003130C /* ViewController.swift */; };
@@ -166,6 +173,13 @@
 		CC13B942272AB97F003F6348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC13B943272AB97F003F6348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CC13B946272ABA37003F6348 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		CC8835302734579400950DE5 /* SerialConcurrentExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialConcurrentExample.swift; sourceTree = "<group>"; };
+		CC88353227345C1800950DE5 /* DispatchGroupExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupExample.swift; sourceTree = "<group>"; };
+		CC88353427345C2B00950DE5 /* OperationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationExample.swift; sourceTree = "<group>"; };
+		CC88353627345D6800950DE5 /* MaterialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC8835382734614700950DE5 /* UIViewLifeCycleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLifeCycleExample.swift; sourceTree = "<group>"; };
+		CC88353A2734615A00950DE5 /* UIViewControllerLifecycleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerLifecycleExample.swift; sourceTree = "<group>"; };
+		CC88353C2734617A00950DE5 /* LayersExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayersExample.swift; sourceTree = "<group>"; };
 		CCD09315272AA7C50003130C /* MVC-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD09318272AA7C50003130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD0931A272AA7C50003130C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +228,7 @@
 				2E4AE52F272F165A00E92376 /* SignInAppleButton.swift */,
 				2E4AE531272F166B00E92376 /* SignInGoogleButton.swift */,
 				2E4AE5992730734A00E92376 /* MaterialCollectionView.swift */,
+				CC88353627345D6800950DE5 /* MaterialsCollectionViewCell.swift */,
 			);
 			path = CommonElements;
 			sourceTree = "<group>";
@@ -458,6 +473,9 @@
 				2E4AE50D272F0E7A00E92376 /* CommonElements */,
 				CC13B942272AB97F003F6348 /* LoginViewController.swift */,
 				CC13B943272AB97F003F6348 /* LoginViewController.xib */,
+				CC8835382734614700950DE5 /* UIViewLifeCycleExample.swift */,
+				CC88353A2734615A00950DE5 /* UIViewControllerLifecycleExample.swift */,
+				CC88353C2734617A00950DE5 /* LayersExample.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -467,6 +485,9 @@
 			children = (
 				2E4AE509272EAF9E00E92376 /* MultihreadingViewController.swift */,
 				2E4AE50A272EAF9E00E92376 /* MultihreadingViewController.xib */,
+				CC8835302734579400950DE5 /* SerialConcurrentExample.swift */,
+				CC88353227345C1800950DE5 /* DispatchGroupExample.swift */,
+				CC88353427345C2B00950DE5 /* OperationExample.swift */,
 			);
 			path = Multithreading;
 			sourceTree = "<group>";
@@ -724,12 +745,19 @@
 			files = (
 				CCD0931D272AA7C50003130C /* ViewController.swift in Sources */,
 				2E4AE59A2730734B00E92376 /* MaterialCollectionView.swift in Sources */,
+				CC88353727345D6800950DE5 /* MaterialsCollectionViewCell.swift in Sources */,
+				CC88353327345C1800950DE5 /* DispatchGroupExample.swift in Sources */,
 				CCD09323272AA7C50003130C /* MVC_example.xcdatamodeld in Sources */,
+				CC88353527345C2B00950DE5 /* OperationExample.swift in Sources */,
+				CC88353B2734615A00950DE5 /* UIViewControllerLifecycleExample.swift in Sources */,
 				CCD09319272AA7C50003130C /* AppDelegate.swift in Sources */,
 				CC13B947272ABA37003F6348 /* AppColors.swift in Sources */,
 				2E4AE50B272EAF9E00E92376 /* MultihreadingViewController.swift in Sources */,
+				CC88353D2734617A00950DE5 /* LayersExample.swift in Sources */,
 				CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */,
+				CC8835312734579400950DE5 /* SerialConcurrentExample.swift in Sources */,
 				2E4AE532272F166B00E92376 /* SignInGoogleButton.swift in Sources */,
+				CC8835392734614700950DE5 /* UIViewLifeCycleExample.swift in Sources */,
 				2E4AE530272F165A00E92376 /* SignInAppleButton.swift in Sources */,
 				CCD0931B272AA7C50003130C /* SceneDelegate.swift in Sources */,
 				2E4AE50F272F0E8F00E92376 /* DefaultButton.swift in Sources */,
