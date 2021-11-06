@@ -11,11 +11,35 @@ import Combine
 
 struct MaterialCollectionItem {
     let name: String
+    let pushCallback: ((UINavigationController) -> ())
     
 }
 class ViewController: UIViewController {
     var data: [MaterialCollectionItem] = [
-        MaterialCollectionItem(name: "Multithreaidng")
+        MaterialCollectionItem(name: "Multithreaidng", pushCallback: {
+            navigationController in
+            navigationController.pushViewController(MultihreadingViewController(), animated: true)
+        }),
+        MaterialCollectionItem(name: "UIKit", pushCallback: {
+            nav in
+            nav.pushViewController(UIKitViewController(), animated: true)
+        }),
+        MaterialCollectionItem(name: "SwiftUI", pushCallback: {
+            nav in
+            nav.pushViewController(SwiftUIViewController(), animated: true)
+        }),
+        MaterialCollectionItem(name: "Core Data", pushCallback: {
+            nav in
+            nav.pushViewController(CoreDataViewController(), animated: true)
+        }),
+        MaterialCollectionItem(name: "Storage", pushCallback: {
+            nav in
+            nav.pushViewController(StorageViewController(), animated: true)
+        }),
+        MaterialCollectionItem(name: "Miscelannous", pushCallback: {
+            nav in
+            nav.pushViewController(MiscViewController(), animated: true)
+        })
     ]
     
     @Published var loginTextField = UITextField()
@@ -42,6 +66,8 @@ class ViewController: UIViewController {
                 layout.scrollDirection = .horizontal
                 // set the frame and layout
                 // set the view to be this UICollectionView
+        layout.itemSize = .zero
+        layout.estimatedItemSize =  CGSize.init(width: 120, height: 120)
         self.materialCollection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         
         setupLoginLabel()
@@ -72,21 +98,18 @@ class ViewController: UIViewController {
                 // bounce at the bottom of the collection view
                 self.materialCollection.alwaysBounceVertical = true
                 // set the background to be white
-        self.materialCollection.backgroundColor = AppColors.claret
         materialCollection.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(materialCollection)
-        
-        
-        materialCollection.backgroundColor = AppColors.prussianBlue
-        materialCollection.tintColor = AppColors.claret
-        
-        
+        self.materialCollection.backgroundColor = AppColors.gainsboro
+        self.materialCollection.alwaysBounceVertical = false
+        self.materialCollection.showsHorizontalScrollIndicator = false
         let leadingConstraint = NSLayoutConstraint(item: materialCollection, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 15)
         let trailingConstraint = NSLayoutConstraint(item: materialCollection, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1, constant: -15)
         let verticalConstraint = NSLayoutConstraint(item: materialCollection, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: onboardingButton, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 10)
         let heightConstraint = NSLayoutConstraint(item: materialCollection, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 200)
+        let verticalConstraint1 = NSLayoutConstraint(item: materialCollection, attribute: NSLayoutConstraint.Attribute.bottom, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view.safeAreaLayoutGuide, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 10)
         
-        NSLayoutConstraint.activate([leadingConstraint, trailingConstraint,verticalConstraint, heightConstraint])
+        NSLayoutConstraint.activate([leadingConstraint, trailingConstraint,verticalConstraint, verticalConstraint1])
     }
     
     func setupLoginLabel() {
@@ -201,7 +224,7 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDelegate {
     // if the user clicks on a cell, display a message
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
+        self.data[indexPath.item].pushCallback(self.navigationController!)
     }
 }
 
@@ -218,4 +241,6 @@ extension ViewController: UICollectionViewDataSource {
         cell.configureCell(text: data.name)
         return cell
     }
+    
+    
 }

@@ -67,6 +67,11 @@
 		2E4AE58F272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE567272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Large@1x.png */; };
 		2E4AE590272F181900E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AE568272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png */; };
 		2E4AE59A2730734B00E92376 /* MaterialCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AE5992730734A00E92376 /* MaterialCollectionView.swift */; };
+		CC0F5D6A27358BF400D48A8A /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F5D6927358BF400D48A8A /* UIKitViewController.swift */; };
+		CC0F5D6C27358C7000D48A8A /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F5D6B27358C7000D48A8A /* SwiftUIViewController.swift */; };
+		CC0F5D6E27358CA200D48A8A /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F5D6D27358CA200D48A8A /* CoreDataViewController.swift */; };
+		CC0F5D7027358CAF00D48A8A /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F5D6F27358CAF00D48A8A /* StorageViewController.swift */; };
+		CC0F5D7227358D1700D48A8A /* MiscViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F5D7127358D1700D48A8A /* MiscViewController.swift */; };
 		CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B942272AB97F003F6348 /* LoginViewController.swift */; };
 		CC13B945272AB97F003F6348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC13B943272AB97F003F6348 /* LoginViewController.xib */; };
 		CC13B947272ABA37003F6348 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13B946272ABA37003F6348 /* AppColors.swift */; };
@@ -170,6 +175,11 @@
 		2E4AE568272F181800E92376 /* Logo - SIWA - Left-aligned - Black - Small@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo - SIWA - Left-aligned - Black - Small@1x.png"; sourceTree = "<group>"; };
 		2E4AE595272F563600E92376 /* multithreading_notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = multithreading_notes.md; sourceTree = "<group>"; };
 		2E4AE5992730734A00E92376 /* MaterialCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCollectionView.swift; sourceTree = "<group>"; };
+		CC0F5D6927358BF400D48A8A /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
+		CC0F5D6B27358C7000D48A8A /* SwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
+		CC0F5D6D27358CA200D48A8A /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataViewController.swift; path = "MVC-example/Modules/UI/CoreDataViewController.swift"; sourceTree = SOURCE_ROOT; };
+		CC0F5D6F27358CAF00D48A8A /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StorageViewController.swift; path = "MVC-example/Modules/UI/StorageViewController.swift"; sourceTree = SOURCE_ROOT; };
+		CC0F5D7127358D1700D48A8A /* MiscViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscViewController.swift; sourceTree = "<group>"; };
 		CC13B942272AB97F003F6348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC13B943272AB97F003F6348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CC13B946272ABA37003F6348 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -435,6 +445,7 @@
 				2E4AE59B2730A0CB00E92376 /* Network */,
 				2E4AE59827306BC600E92376 /* Shop */,
 				2E4AE59727306BB900E92376 /* Datastore */,
+				CC0F5D7127358D1700D48A8A /* MiscViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -442,6 +453,8 @@
 		2E4AE59727306BB900E92376 /* Datastore */ = {
 			isa = PBXGroup;
 			children = (
+				CC0F5D6D27358CA200D48A8A /* CoreDataViewController.swift */,
+				CC0F5D6F27358CAF00D48A8A /* StorageViewController.swift */,
 			);
 			path = Datastore;
 			sourceTree = "<group>";
@@ -476,6 +489,8 @@
 				CC8835382734614700950DE5 /* UIViewLifeCycleExample.swift */,
 				CC88353A2734615A00950DE5 /* UIViewControllerLifecycleExample.swift */,
 				CC88353C2734617A00950DE5 /* LayersExample.swift */,
+				CC0F5D6927358BF400D48A8A /* UIKitViewController.swift */,
+				CC0F5D6B27358C7000D48A8A /* SwiftUIViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -746,15 +761,20 @@
 				CCD0931D272AA7C50003130C /* ViewController.swift in Sources */,
 				2E4AE59A2730734B00E92376 /* MaterialCollectionView.swift in Sources */,
 				CC88353727345D6800950DE5 /* MaterialsCollectionViewCell.swift in Sources */,
+				CC0F5D6E27358CA200D48A8A /* CoreDataViewController.swift in Sources */,
 				CC88353327345C1800950DE5 /* DispatchGroupExample.swift in Sources */,
+				CC0F5D6C27358C7000D48A8A /* SwiftUIViewController.swift in Sources */,
 				CCD09323272AA7C50003130C /* MVC_example.xcdatamodeld in Sources */,
 				CC88353527345C2B00950DE5 /* OperationExample.swift in Sources */,
 				CC88353B2734615A00950DE5 /* UIViewControllerLifecycleExample.swift in Sources */,
 				CCD09319272AA7C50003130C /* AppDelegate.swift in Sources */,
+				CC0F5D7227358D1700D48A8A /* MiscViewController.swift in Sources */,
 				CC13B947272ABA37003F6348 /* AppColors.swift in Sources */,
 				2E4AE50B272EAF9E00E92376 /* MultihreadingViewController.swift in Sources */,
 				CC88353D2734617A00950DE5 /* LayersExample.swift in Sources */,
 				CC13B944272AB97F003F6348 /* LoginViewController.swift in Sources */,
+				CC0F5D7027358CAF00D48A8A /* StorageViewController.swift in Sources */,
+				CC0F5D6A27358BF400D48A8A /* UIKitViewController.swift in Sources */,
 				CC8835312734579400950DE5 /* SerialConcurrentExample.swift in Sources */,
 				2E4AE532272F166B00E92376 /* SignInGoogleButton.swift in Sources */,
 				CC8835392734614700950DE5 /* UIViewLifeCycleExample.swift in Sources */,
