@@ -8,7 +8,28 @@
       location = "group:swift"
       name = "swift">
       <FileRef
-         location = "group:/Users/romanguseynov/Documents/GitHub/daily-programming/swift/MultithreaidnPlaygorund.playground">
+         location = "group:../Archichetctures.md">
+      </FileRef>
+      <FileRef
+         location = "group:../Collections.md">
+      </FileRef>
+      <FileRef
+         location = "group:../Combine.md">
+      </FileRef>
+      <FileRef
+         location = "group:../Patterns.md">
+      </FileRef>
+      <FileRef
+         location = "group:../Swift_Notes.md">
+      </FileRef>
+      <FileRef
+         location = "group:MultithreaidnPlaygorund.playground">
+      </FileRef>
+      <FileRef
+         location = "group:awesome-ios.md">
+      </FileRef>
+      <FileRef
+         location = "group:CoreData.md">
       </FileRef>
       <FileRef
          location = "group:swift-sandbox.playground">
