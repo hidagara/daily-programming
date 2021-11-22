@@ -19,6 +19,35 @@ printerQueue.addOperation({
     sleep(1)
 })
 
+
+var dict = [String: String]()
+
+dict["kek"] = "kek"
+
+
+print(dict.count)
+
+var dict2: [String: String] = [:]
+
+print(dict2.count)
+
+
+var arr = [Int]()
+arr.append(10)
+arr.append(20)
+print(arr.count)
+var arr2: [Int] = []
+print(arr2.count)
+
+var set = Set<String>()
+set.insert("KEKEK")
+print(set)
+
+var set2: Set<String> = []
+set2.insert("HELLO")
+
+print(set2)
+
 print("IT STARTED")
 
 DispatchQueue.global().async {

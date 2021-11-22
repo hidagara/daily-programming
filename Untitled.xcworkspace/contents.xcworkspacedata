@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIKitExample/UIKitExample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CoreDataExample/CoreDataExample.xcodeproj">
    </FileRef>
    <FileRef
@@ -36,6 +39,9 @@
       </FileRef>
       <FileRef
          location = "group:swift-sandbox.playground">
+      </FileRef>
+      <FileRef
+         location = "group:UI.md">
       </FileRef>
    </Group>
    <Group

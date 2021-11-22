@@ -79,12 +79,23 @@ class ViewController: UIViewController {
         setupOnboardingButton()
         setupMaterialCollection()
     }
-
+    func heapSize(_ obj: AnyObject) -> Int {
+        return malloc_size(Unmanaged.passUnretained(obj).toOpaque())
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = AppColors.gainsboro
         // Do any additional setup after loading the view.
-       
+        var arr = [TheStruct]()
+        for i in 0...1_000_000_000 {
+            arr.append(TheStruct(name: String(i)))
+        }
+    }
+    
+    struct TheStruct {
+        let name: String
     }
     
     
