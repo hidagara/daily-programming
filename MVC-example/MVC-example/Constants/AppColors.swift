@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-struct AppColors {
+public struct AppColors {
     static let prussianBlue = AppColors.hexStringToUIColor(hex: "002642")
     static let claret = AppColors.hexStringToUIColor(hex: "840032")
     static let gamboge = AppColors.hexStringToUIColor(hex: "E59500")

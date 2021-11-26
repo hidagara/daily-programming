@@ -35,6 +35,20 @@
 			remoteGlobalIDString = CC8A96FB2749F7960083855F;
 			remoteInfo = UIKitExample;
 		};
+		CC8E91F127505B8D00B48FB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC8E91EC27505B8C00B48FB7 /* networking-frame.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC8E91D227505B8C00B48FB7;
+			remoteInfo = "networking-frame";
+		};
+		CC8E91F327505B8D00B48FB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC8E91EC27505B8C00B48FB7 /* networking-frame.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC8E91DC27505B8C00B48FB7;
+			remoteInfo = "networking-frameTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +66,7 @@
 		CC8A97232749F79A0083855F /* UIKitExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExampleUITests.swift; sourceTree = "<group>"; };
 		CC8A97252749F79A0083855F /* UIKitExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CC8A9741274AE3FC0083855F /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		CC8E91EC27505B8C00B48FB7 /* networking-frame.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "networking-frame.xcodeproj"; path = "../networking-frame/networking-frame.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,7 @@
 		CC8A96F32749F7960083855F = {
 			isa = PBXGroup;
 			children = (
+				CC8E91EC27505B8C00B48FB7 /* networking-frame.xcodeproj */,
 				CC8A96FE2749F7960083855F /* UIKitExample */,
 				CC8A97182749F79A0083855F /* UIKitExampleTests */,
 				CC8A97222749F79A0083855F /* UIKitExampleUITests */,
@@ -103,6 +119,7 @@
 		CC8A96FE2749F7960083855F /* UIKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				CC8E91C727505B6600B48FB7 /* New Group */,
 				CC8A97342749F9C60083855F /* App */,
 				CC8A97332749F9C00083855F /* Modules */,
 				CC8A97322749F9B50083855F /* CommonElements */,
@@ -204,6 +221,22 @@
 			path = PremiumModule;
 			sourceTree = "<group>";
 		};
+		CC8E91C727505B6600B48FB7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CC8E91ED27505B8C00B48FB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC8E91F227505B8D00B48FB7 /* networking_frame.framework */,
+				CC8E91F427505B8D00B48FB7 /* networking-frameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,6 +333,12 @@
 			);
 			productRefGroup = CC8A96FD2749F7960083855F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CC8E91ED27505B8C00B48FB7 /* Products */;
+					ProjectRef = CC8E91EC27505B8C00B48FB7 /* networking-frame.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CC8A96FB2749F7960083855F /* UIKitExample */,
@@ -308,6 +347,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CC8E91F227505B8D00B48FB7 /* networking_frame.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = networking_frame.framework;
+			remoteRef = CC8E91F127505B8D00B48FB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC8E91F427505B8D00B48FB7 /* networking-frameTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "networking-frameTests.xctest";
+			remoteRef = CC8E91F327505B8D00B48FB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CC8A96FA2749F7960083855F /* Resources */ = {
