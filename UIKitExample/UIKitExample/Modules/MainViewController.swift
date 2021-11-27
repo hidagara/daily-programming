@@ -13,7 +13,109 @@ import UIKit
 import SnapKit
 import MVC_example
 
+
+class HeaderInfoView: UIView {
+    
+    lazy var usernameLabel: UILabel = {
+        let label = UILabel()
+        
+        return label
+    }()
+    
+    lazy var positionLabel: UILabel = {
+        let label = UILabel()
+        
+        return label
+    }()
+    
+    
+    lazy var descriptionText: UILabel = {
+        let label = UILabel()
+        
+        return label
+    }()
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = .gray
+        self.layer.cornerRadius = 8
+        setupUI()
+    }
+    
+    private func setupUI() {
+        self.addSubview(usernameLabel)
+        self.addSubview(positionLabel)
+        
+        usernameLabel.snp.makeConstraints {
+            make in
+            make.top.equalTo(self)
+            make.leading.equalTo(self.snp.leading).offset(15)
+            make.height.equalTo(100)
+        }
+        
+        positionLabel.snp.makeConstraints {
+            make in
+            make.top.equalTo(self)
+            make.leading.greaterThanOrEqualTo(self.usernameLabel.snp.trailing).offset(25)
+            make.trailing.equalTo(self.snp.trailing).offset(-15)
+            make.height.equalTo(100)
+        }
+    }
+    
+    func setupView(username: String) {
+        self.usernameLabel.text = username
+    }
+    
+}
+struct ButtonData {
+    let caption: String
+    let viewController: UIViewController.Type
+}
 class MainViewController: UIViewController {
+    
+    
+    let buttonsData: [ButtonData] = [ButtonData(caption: "PremiumModule", viewController: ProfileViewController.self)]
+    
+    // Container View for top content (table view with some info view)
+    
+     lazy var topContainerView: HeaderInfoView = {
+        let view = HeaderInfoView()
+         let vc = buttonsData[0].viewController.init()
+         print(vc)
+        return view
+    }()
+    
+    
+    // Buttons to navigate to other views
+    
+     lazy var buttonsTableView: UITableView = {
+       let tableView = UITableView()
+        tableView.backgroundColor = .red
+         tableView.layer.cornerRadius = 8
+        return tableView
+    }()
+    
+    // Some product categories
+    
+    lazy var categoriesCollectionView: UIView = {
+        let colView = UIView()
+        colView.backgroundColor = .yellow
+        colView.layer.cornerRadius = 8
+        return colView
+    }()
+    
+    // Some common info
+    
+    lazy var bottomContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        view.layer.cornerRadius = 8
+        return view
+    }()
     
     
     func fetchData() {
@@ -41,69 +143,67 @@ class MainViewController: UIViewController {
         dataTask.resume()
     }
     
-    lazy var box = UIView()
-    lazy var loginButton: LoginButton = {
+    
+    private func stateValues() {
         
-        var btn =  LoginButton()
-        self.view.addSubview(btn)
-        btn.snp.makeConstraints {
-            make in
-            make.top.equalTo(self.loginTextField.snp.bottom).offset(15)
-            make.height.width.equalTo(25)
-            
+    }
+
+
+    private func setupUI() {
+        self.view.addSubview(buttonsTableView)
+        self.view.addSubview(topContainerView)
+        self.view.addSubview(categoriesCollectionView)
+        self.view.addSubview(bottomContainerView)
+        
+        topContainerView.usernameLabel.text = "Roman Guseynov"
+        topContainerView.positionLabel.text = "iOS Developer"
+    
+        self.view.backgroundColor = .white
+        
+        categoriesCollectionView.layer.opacity = 0.5
+        
+        categoriesCollectionView.snp.makeConstraints { make in
+            make.height.equalTo(100)
+            make.leading.equalTo(self.view).offset(25)
+            make.trailing.equalTo(self.view).offset(-25)
+            make.top.equalTo(self.buttonsTableView).offset(-45)
         }
         
-        btn.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
-        return btn
-    }()
-    
-    lazy var loginTextField: UITextField = {
-        var lgt = UITextField()
-        self.view.addSubview(lgt)
-        lgt.backgroundColor = .gray
-        lgt.layer.cornerRadius = 8
-        lgt.snp.makeConstraints {
-            make in
+        topContainerView.snp.makeConstraints { make in
+            make.height.equalTo(250)
             make.top.equalTo(self.view.safeAreaLayoutGuide)
-            make.height.equalTo(30)
             make.leading.equalTo(self.view).offset(15)
             make.trailing.equalTo(self.view).offset(-15)
         }
-        return lgt
-    }()
+        
+        
+        buttonsTableView.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(120)
+            make.top.equalTo(self.topContainerView.snp.bottom).offset(15)
+            make.leading.equalTo(self.view).offset(15)
+            make.trailing.equalTo(self.view).offset(-15)
+        }
+        
+        bottomContainerView.snp.makeConstraints { make in
+            make.top.equalTo(self.buttonsTableView.snp.bottom).offset(15)
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
+            make.leading.equalTo(self.view).offset(15)
+            make.trailing.equalTo(self.view).offset(-15)
+        }
+    }
     
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        fetchData()
+        self.setupUI()
+//        fetchData()
         
-        
-        self.view.backgroundColor = .white
-        self.view.addSubview(box)
-//        box.backgroundColor = AppColors.gainsboro
-        box.snp.makeConstraints { (make) -> Void in
-                   make.width.height.equalTo(120)
-                   make.center.equalTo(self.view)
-        }
-        box.layer.cornerRadius = 8
-        self.view.addSubview(loginButton)
-        loginButton.backgroundColor = .red
-        
-        
-        loginButton.layer.cornerRadius = 8
         
     }
     
     
     @objc func buttonPressed() {
         print("button pressed")
-        
-        self.loginButton.snp.remakeConstraints { make in
-            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(30)
-        }
     }
 }
 

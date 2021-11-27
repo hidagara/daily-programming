@@ -18,6 +18,7 @@
 		CC8A97262749F79A0083855F /* UIKitExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A97252749F79A0083855F /* UIKitExampleUITestsLaunchTests.swift */; };
 		CC8A9740274AE3270083855F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC8A973F274AE3270083855F /* SnapKit */; };
 		CC8A9742274AE3FC0083855F /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A9741274AE3FC0083855F /* LoginButton.swift */; };
+		CC8E91F82751C54700B48FB7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E91F72751C54700B48FB7 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CC8A97252749F79A0083855F /* UIKitExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CC8A9741274AE3FC0083855F /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		CC8E91EC27505B8C00B48FB7 /* networking-frame.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "networking-frame.xcodeproj"; path = "../networking-frame/networking-frame.xcodeproj"; sourceTree = "<group>"; };
+		CC8E91F72751C54700B48FB7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		CC8A97352749FA250083855F /* ProfileModule */ = {
 			isa = PBXGroup;
 			children = (
+				CC8E91F72751C54700B48FB7 /* ProfileViewController.swift */,
 			);
 			path = ProfileModule;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8E91F82751C54700B48FB7 /* ProfileViewController.swift in Sources */,
 				CC8A9742274AE3FC0083855F /* LoginButton.swift in Sources */,
 				CC8A97042749F7960083855F /* MainViewController.swift in Sources */,
 				CC8A97002749F7960083855F /* AppDelegate.swift in Sources */,

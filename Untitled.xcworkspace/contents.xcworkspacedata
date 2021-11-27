@@ -46,6 +46,9 @@
       <FileRef
          location = "group:Working Time Note.swift">
       </FileRef>
+      <FileRef
+         location = "group:CodeSnippets.swift">
+      </FileRef>
    </Group>
    <Group
       location = "group:todo-app"
