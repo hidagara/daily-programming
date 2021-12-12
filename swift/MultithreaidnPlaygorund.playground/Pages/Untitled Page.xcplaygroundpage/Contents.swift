@@ -23,3 +23,9 @@ class MyOP: Operation {
     
 }
 //PlaygroundPage.current.finishExecution()
+
+
+
+// CoreData Tutorial
+
+# 
